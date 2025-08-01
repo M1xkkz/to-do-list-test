@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+#temple.templeall {
+    width: 90%;
+    max-width: 1200px;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: url('img/bg2.jpg'); /* ระบุ path ของรูปภาพพื้นหลัง */
+    background-size: cover; /* ปรับขนาดรูปให้ครอบคลุมพื้นที่ทั้งหมด โดยไม่บิดเบี้ยว */
+    background-repeat: no-repeat; /* ไม่ให้รูปภาพแสดงซ้ำ */
+    background-position: center center; /* จัดตำแหน่งรูปภาพให้อยู่กึ่งกลาง */
+    background-color: #f0f0f0; / สีเทาอ่อน *
+    width: 100vw; /* ทำให้กว้างเท่ากับความกว้างของหน้าจอ */
+    min-height: 100vh; /* ทำให้มีความสูงอย่างน้อยเท่ากับความสูงของหน้าจอ */
+    max-width: none; /* ยกเลิกการจำกัดความกว้างสูงสุด */
+    border-radius: 0; /* ลบขอบมนออกเพื่อให้เต็มจอ */
+}
+
+.main-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.temple-list {
+    display: grid;
+    gap: 20px;
+    /* Default to 4 columns, will be changed by JS */
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+}
+
+.wat {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.wat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    width: 100%;
+    padding-bottom: 100%; /* Creates a 1:1 aspect ratio container */
+    position: relative;
+}
+
+.imagewatthai2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is the key for cropping the image without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wat-info {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #555;
+}

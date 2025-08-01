@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple by Region</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="temple" class="templeall">
+        <h1 class="main-title">TEMPLE BY REGION</h1>
+        <p class="subtitle">ค้นหาข้อมูลวัดตามภูมิภาค</p>
+
+        <div class="controls">
+            <label for="column-count">จำนวนคอลัมภ์:</label>
+            <select id="column-count">
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+            </select>
+            <label>
+                <input type="checkbox" id="autoplay-toggle" checked>
+                เล่นอัตโนมัติ
+            </label>
+        </div>
+
+        <div class="temple-list">
+            <div id="watthai" class="wat">
+                <div class="image-container">
+                    <img id="imagewatthai" class="imagewatthai2" src="img/buddhist-temple-5073389_1280.jpg" alt="ภาคเหนือ">
+                </div>
+                <div class="wat-info">
+                    <p>ภาคเหนือ</p>
+                </div>
+            </div>
+            
+            <div id="watthai" class="wat">
+                <div class="image-container">
+                    <img id="imagewatthai" class="imagewatthai2" src="img/chaingmai-4309823_1280.jpg" alt="ภาคกลาง">
+                </div>
+                <div class="wat-info">
+                    <p>ภาคกลาง</p>
+                </div>
+            </div>
+
+            <div id="watthai" class="wat">
+                <div class="image-container">
+                    <img id="imagewatthai" class="imagewatthai2" src="img/temple-5039707_1280.jpg" alt="ภาคตะวันออกเฉียงเหนือ">
+                </div>
+                <div class="wat-info">
+                    <p>ภาคตะวันออกเฉียงเหนือ</p>
+                </div>
+            </div>
+
+            <div id="watthai" class="wat">
+                <div class="image-container">
+                    <img id="imagewatthai" class="imagewatthai2" src="img/thailand-2686524_1280.jpg" alt="ภาคตะวันตก">
+                </div>
+                <div class="wat-info">
+                    <p>ภาคตะวันตก</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
